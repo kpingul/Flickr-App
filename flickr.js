@@ -10,7 +10,7 @@
 
     pageNumber: 1,
 
-    perPageNumber: 10
+    perPageNumber: 20
 
   }
 
