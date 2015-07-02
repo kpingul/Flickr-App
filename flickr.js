@@ -8,6 +8,7 @@
 
     userId: "40248662@N07",
 
+
     pageNumber: 1,
 
     perPageNumber: 10
@@ -106,7 +107,7 @@
       for(var index = 0, max = photos.length; index < max; index+=1 ) {
 
         //source photo URL from flickr API 
-        html = '<li><a href= "https://farm' + photos[index].farmID + '.staticflickr.com/' + photos[index].serverID + '/' + photos[index].id + '_' + photos[index].secretID + '.jpg" title="' + photos[index].title + '" data-gallery> <img src= "https://farm' + photos[index].farmID + '.staticflickr.com/' + photos[index].serverID + '/' + photos[index].id + '_' + photos[index].secretID + '_b.jpg" class="img-rounded styleimg" width="200" height="200"></a></li>';
+        html = '<li><a href= "https://farm' + photos[index].farmID + '.staticflickr.com/' + photos[index].serverID + '/' + photos[index].id + '_' + photos[index].secretID + '.jpg" title="' + photos[index].title + '" data-gallery> <img src= "https://farm' + photos[index].farmID + '.staticflickr.com/' + photos[index].serverID + '/' + photos[index].id + '_' + photos[index].secretID + '_b.jpg" class="img-rounded styleimg " width="200" height="200"></a></li>';
 
         imageList.append(html);
       }
