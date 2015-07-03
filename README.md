@@ -1,4 +1,4 @@
-I # Flickr Application
+#Flickr Application
 
 <a href="http://kpingul.github.io/shoppingapp-v2">View here</a>
 
