@@ -1,6 +1,6 @@
-# Flickr Application
+I # Flickr Application
 
-<a href="http://kpingul.github.io/shoppingapp-v2">View here<\a>
+<a href="http://kpingul.github.io/shoppingapp-v2">View here</a>
 
 #The Goal
 
