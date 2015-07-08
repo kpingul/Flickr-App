@@ -2,7 +2,7 @@
 
 #Update
 
-I added <a href="http://bower.io">Bower</a> and <a href="http://gulpjs.com">Gulp</a> to my workflow and finding it very nice in minifying the JS and CSS files.
+I added <a href="http://bower.io">Bower</a> and <a href="http://gulpjs.com">Gulp</a> to my workflow and found it very useful minifying the JS and CSS files for a lift in performance at load time.
 
 <a href="http://kpingul.github.io/Flickr-App">View here</a>
 
