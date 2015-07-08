@@ -1,5 +1,9 @@
 #Flickr Application
 
+#Update
+
+I added bower and gulp to my workflow and finding it very nice in minifying the JS and CSS files.
+
 <a href="http://kpingul.github.io/shoppingapp-v2">View here</a>
 
 #The Goal
