@@ -106,7 +106,7 @@
       for(var index = 0, max = photos.length; index < max; index+=1 ) {
 
         //source photo URL from flickr API 
-        html = '<li><a href= "https://farm' + photos[index].farmID + '.staticflickr.com/' + photos[index].serverID + '/' + photos[index].id + '_' + photos[index].secretID + '_n.jpg" title="' + photos[index].title + '"  class="img-responsive" data-gallery > <img src= "https://farm' + photos[index].farmID + '.staticflickr.com/' + photos[index].serverID + '/' + photos[index].id + '_' + photos[index].secretID + '_b.jpg" class="img-rounded styleimg" width="200" height="200"></a></li>';
+        html = '<li><a href= "https://farm' + photos[index].farmID + '.staticflickr.com/' + photos[index].serverID + '/' + photos[index].id + '_' + photos[index].secretID + '_c.jpg" title="' + photos[index].title + '"  class="img-responsive" data-gallery > <img src= "https://farm' + photos[index].farmID + '.staticflickr.com/' + photos[index].serverID + '/' + photos[index].id + '_' + photos[index].secretID + '_b.jpg" class="img-rounded styleimg" width="200" height="200"></a></li>';
 
         imageList.append(html);
       }
