@@ -3,10 +3,11 @@
 <html>
 <head>
 	<!-- Minified Version of Dependencies AND stylesheet-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="bin/deps.min.css">
 
-	<link rel="stylesheet" href="src/css/stylesheet.css">	
+	<link rel="stylesheet" href="bin/stylesheet.min.css">	
 </head>
 <body>
 		
@@ -33,10 +34,10 @@
 
 
 	
-		<div id="img">
-			<div id="blueimp-gallery" class="blueimp-gallery">
+		<div id="img" >
+			<div id="blueimp-gallery" class="blueimp-gallery" >
 			    <!-- The container for the modal slides -->
-			    <div class="slides"></div>
+			    <div class="slides" style="position: relative; bottom: 20px"></div>
 			    <!-- Controls for the borderless lightbox -->
 			    <h3 class="title"></h3>
 			    <a class="prev">‹</a>
@@ -52,7 +53,7 @@
 			                    <button type="button" class="close" aria-hidden="true" style="color: white">&times;</button>
 			                    <h4 class="modal-title" style="color: white"></h4>
 			                </div>
-			                <div class="modal-body next"></div>
+			                <div class="modal-body next" style="position: relative; right: 5px"></div>
 			              
 			          </div>
 			
@@ -73,7 +74,7 @@
 <!-- Uglified Version of Dependencies AND scripts-->
 <script src="src/deps.js"></script>
 
-<script src="flickr.js"></script>
+<script src="bin/flickr.min.js"></script>
 
 </body>	
 
