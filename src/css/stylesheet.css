@@ -2,6 +2,7 @@ img
 
 {
 	width: 100%;
+
 }
 
 .list li
@@ -33,7 +34,8 @@ img
 
 	width: 200px; 
 
-	height: 200px;	 
+	height: 200px;	
+
 	
 }
 
@@ -41,5 +43,14 @@ img
 
 {
 		 box-shadow: 4px 6px 5px #888888;
+
+}
+
+
+@media (max-width: 503px ){
+	.styleimg{
+		width: 90%;
+		border: 2px solid grey;
+	}
 
 }
