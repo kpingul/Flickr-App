@@ -1,6 +1,6 @@
 {
   "name": "flickrapi",
-  "version": "0.3.32",
+  "version": "0.3.35",
   "homepage": "https://github.com/Pomax/node-flickrapi",
   "repository": {
     "type": "git",
@@ -22,14 +22,13 @@
     "node_modules",
     "bower_components"
   ],
-  "_release": "0.3.32",
+  "_release": "0.3.35",
   "_resolution": {
     "type": "version",
-    "tag": "v0.3.32",
-    "commit": "b3819d377785e028b26df0e2b77c62dcf522153b"
+    "tag": "v0.3.35",
+    "commit": "19ce72b67f0107407a35a8e0c5765897a3dc957d"
   },
   "_source": "git://github.com/Pomax/node-flickrapi.git",
   "_target": "~0.3.32",
-  "_originalSource": "flickrapi",
-  "_direct": true
+  "_originalSource": "flickrapi"
 }

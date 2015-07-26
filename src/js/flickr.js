@@ -2,6 +2,25 @@
 
   'use strict';
 
+    var photos = []
+
+    //required for photo source url for rendering of image on page
+    var photoID, serverID, farmID, secretID, titles = '';
+
+    //caching DOM for rendering of photos
+    var imageList = $('#basicExample');
+
+    //empty html variable to be used to append onto imagelist element
+    var html = '';
+
+     var source   = $("#template").html();
+  var template = Handlebars.compile(source);
+
+  // optional, speeds up future uses
+  
+
+
+
   var config = {
 
     apiKey: "7fc4618c200ab1549a30ce201d92e058",
@@ -45,27 +64,18 @@
       postResults(result);
 
 
-    });z
+
+    });
 
 
 
     function postResults(result){
 
-        var photos = []
-
-      //required for photo source url for rendering of image on page
-      var photoID, serverID, farmID, secretID, titles = '';
-
-      //caching DOM for rendering of photos
-      var imageList = $('.list');
-
-      //empty html variable to be used to append onto imagelist element
-      var html = '';
-
+    
 
       //cache array of photos
       var photo = result.photos.photo;
-
+      console.log(photo)
      
       for(var i = 0; i < photo.length; i++) {
 
@@ -101,21 +111,38 @@
 
           photos.push(newphoto);
 
+
+
       }
 
 
-      for(var index = 0, max = photos.length; index < max; index+=1 ) {
 
-        //source photo URL from flickr API 
-        html = '<li><a href= "https://farm' + photos[index].farmID + '.staticflickr.com/' + photos[index].serverID + '/' + photos[index].id + '_' + photos[index].secretID + '.jpg" title="' + photos[index].title + '" data-gallery> <img src= "https://farm' + photos[index].farmID + '.staticflickr.com/' + photos[index].serverID + '/' + photos[index].id + '_' + photos[index].secretID + '_b.jpg" class="img-rounded styleimg " width="200" height="200"></a></li>';
+      var context = {photos: photos};
+      var html    = template(context);
 
-        imageList.append(html);
-      }
+     $('#basicExample').html(html);
+
+    $("#basicExample").justifiedGallery({
+        rowHeight :250,
+        maxRowHeight: 200,
+        randomize: true,
+        border: 20,
+        lastRow : 'nojustify',
+        sizeRangeSuffixes: {
+          100 : '_t', // used with images which are less than 100px on the longest side
+          240 : '_m', // used with images which are between 100px and 240px on the longest side
+          320 : '_n', // ...
+          500 : '',
+          640 : '_z',
+          1024 : '_b' // used which images that are more than 640px on the longest side
+        }
 
 
-      
+
+    });
 
     }
+
 
 
 }(Flickr));

@@ -138,6 +138,9 @@ module.exports = (function() {
      * Parse a Flickr API response.
      */
     parseRestResponse: function(body) {
+      if(!body) {
+        return false;
+      }
       var constituents = body.split("&"),
           response = {},
           keyval;
@@ -335,12 +338,14 @@ module.exports = (function() {
       var uploadids = [];
       delete uploadOptions.photos;
       var self = this;
+
       (function next(err, result) {
         if(err) { return processResult(err); }
         if(result) { uploadids.push(result); }
         if(photos.length === 0) { return processResult(false, uploadids); }
         self.uploadtoFlickr(photos.splice(0,1)[0], flickrOptions, next);
       }(false, false));
+
     },
 
     uploadtoFlickr: function(photoOptions, flickrOptions, callback) {
@@ -351,7 +356,7 @@ module.exports = (function() {
       // collapse tags, if used
       if(photoOptions.tags && photoOptions.tags.forEach) {
         photoOptions.tags = photoOptions.tags.map(function(v) {
-          return '"' + v + '"';
+          return '"' + v.replace(/'/g,'%27') + '"';
         }).join(" ");
       }
 
@@ -371,6 +376,9 @@ module.exports = (function() {
       // now we can put the photo back in
       photoOptions.photo = photo;
 
+      // restore the percentage encoded quotes in tags
+      photoOptions.tags = photoOptions.tags.replace(/%27/g,"'");
+
       // and finally, form the URL we need to POST to
       var signature = "&oauth_signature=" + photoOptions.oauth_signature;
       var flickrURL = url + "?" + queryString + signature;
@@ -378,8 +386,10 @@ module.exports = (function() {
       var req = request.post(flickrURL, function(error, response, body) {
         // format:json does not actually work, so we need to grab the photo ID from the response XML:
         // <?xml version="1.0" encoding="utf-8" ?>\n<rsp stat="ok">\n<photoid>.........</photoid>\n</rsp>\n
-        var data = undefined;
-        if(body.indexOf('rsp stat="ok"')>-1) {
+        var data;
+        if(!body) {
+          error = error || "No body found in response";
+        } else if (body.indexOf('rsp stat="ok"')>-1) {
           data = parseInt(body.split("<photoid>")[1].split("</photoid>")[0], 10);
         }
         callback(error, data);

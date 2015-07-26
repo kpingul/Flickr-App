@@ -13,8 +13,6 @@ gulp.task('depsJs', function(){
 	return gulp.src([
 
 			'bower_components/jquery/dist/jquery.min.js',
-			'bower_components/blueimp-gallery/js/jquery.blueimp-gallery.min.js',
-			'bower_components/blueimp-bootstrap-image-gallery/js/bootstrap-image-gallery.min.js',
 			'bower_components/flickrapi/browser/flickrapi.js'
 		])
 
@@ -56,8 +54,7 @@ gulp.task('scriptJs', function(){
 gulp.task('depsCSS', function(){
 
 	return gulp.src([
-			'bower_components/bootstrap/dist/css/bootstrap.min.css',
-			'bower_components/blueimp-gallery/css/blueimp-gallery.min.css'
+			'bower_components/bootstrap/dist/css/bootstrap.min.css'
 		])
 		.pipe(concat('deps.css'))
 		.pipe(gulp.dest('src'));
