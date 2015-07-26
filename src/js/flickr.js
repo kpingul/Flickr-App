@@ -142,11 +142,15 @@
 
     }).on('jg.complete', function () {
     $(this).find('a').colorbox({
-        maxWidth : '100%',
-        maxHeight : '100%',
-        opacity : 0.8,
+        maxWidth : '95%',
+        maxHeight : '95%',
+        speed: 400,
+        opacity : .9,
+        fadeOut: 600,
         transition : 'elastic',
-        current : ''
+        current : '',
+        scalePhotos: true 
+      
     });
 });
 
