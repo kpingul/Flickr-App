@@ -127,6 +127,7 @@
         maxRowHeight: 200,
         randomize: true,
         border: 20,
+         rel : 'gallery1',
         lastRow : 'nojustify',
         sizeRangeSuffixes: {
           100 : '_t', // used with images which are less than 100px on the longest side
@@ -139,7 +140,15 @@
 
 
 
+    }).on('jg.complete', function () {
+    $(this).find('a').colorbox({
+        maxWidth : '100%',
+        maxHeight : '100%',
+        opacity : 0.8,
+        transition : 'elastic',
+        current : ''
     });
+});
 
     }
 
