@@ -8,16 +8,14 @@
     var photoID, serverID, farmID, secretID, titles = '';
 
     //caching DOM for rendering of photos
-    var imageList = $('#basicExample');
+    var gallery = $('#basicExample');
 
-    //empty html variable to be used to append onto imagelist element
-    var html = '';
 
      var source   = $("#template").html();
-  var template = Handlebars.compile(source);
-
-  // optional, speeds up future uses
   
+      var template = Handlebars.compile(source);
+
+    
 
 
 
@@ -120,15 +118,15 @@
       var context = {photos: photos};
       var html    = template(context);
 
-     $('#basicExample').html(html);
+     $(gallery).html(html);
 
-    $("#basicExample").justifiedGallery({
-        rowHeight :250,
-        maxRowHeight: 200,
+    $(gallery).justifiedGallery({
+        rowHeight :220,
+   
         randomize: true,
-        border: 20,
+        margins: 0,
          rel : 'gallery1',
-        lastRow : 'nojustify',
+        lastRow : 'justify',
         sizeRangeSuffixes: {
           100 : '_t', // used with images which are less than 100px on the longest side
           240 : '_m', // used with images which are between 100px and 240px on the longest side
@@ -149,10 +147,13 @@
         fadeOut: 600,
         transition : 'elastic',
         current : '',
-        scalePhotos: true 
+      retinaImage: true,
+      retinaUrl: true
       
     });
 });
+
+
 
     }
 
