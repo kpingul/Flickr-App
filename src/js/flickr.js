@@ -125,7 +125,7 @@
    
         randomize: true,
         margins: 0,
-         rel : 'gallery1',
+        rel : 'gallery1',
         lastRow : 'justify',
         sizeRangeSuffixes: {
           100 : '_t', // used with images which are less than 100px on the longest side
@@ -146,9 +146,7 @@
         opacity : .9,
         fadeOut: 600,
         transition : 'elastic',
-        current : '',
-      retinaImage: true,
-      retinaUrl: true
+        current : ''
       
     });
 });
