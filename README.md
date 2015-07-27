@@ -20,9 +20,9 @@ Use NPM to install
 <a href="https://www.npmjs.com/package/gulp-uglify">gulp-uglify</a>
 
 
-Setup Server 
+#Setup Server 
 
-	-<a href="http://expressjs.com/">Express js</a> run on local host
+<a href="http://expressjs.com/">Express js</a> run on local host
 
 #Dependencies using Bower
 
