@@ -9,15 +9,15 @@
 
 Use NPM to install
 
-	-<a href="https://www.npmjs.com/package/gulp">gulp</a>
+<a href="https://www.npmjs.com/package/gulp">gulp</a>
 
-	-<a href="https://www.npmjs.com/package/gulp-concat">gulp-concat</a>
+<a href="https://www.npmjs.com/package/gulp-concat">gulp-concat</a>
 
-	-<a href="https://www.npmjs.com/package/gulp-minify-css">gulp-minifiy-css</a>
+<a href="https://www.npmjs.com/package/gulp-minify-css">gulp-minifiy-css</a>
 
-	-<a href="https://www.npmjs.com/package/gulp-rename">gulp-rename</a>
+<a href="https://www.npmjs.com/package/gulp-rename">gulp-rename</a>
 
-	-<a href="https://www.npmjs.com/package/gulp-uglify">gulp-uglify</a>
+<a href="https://www.npmjs.com/package/gulp-uglify">gulp-uglify</a>
 
 
 Setup Server 

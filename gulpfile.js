@@ -6,7 +6,8 @@ var gulp 		= require('gulp'),
 
 
 var path = {
-	bower: 'bower_components/'
+	bower: 'bower_components/',
+	css: 'src/css/'
 }
 
 
@@ -39,9 +40,9 @@ gulp.task('dependenciesJS', function(){
 gulp.task('scriptJs', function(){
 	return gulp.src(['src/js/flickr.js'])
 
-			.pipe(concat('flickr.min.js'))
-			.pipe(uglify())
-			.pipe(gulp.dest('build/js'));
+		.pipe(concat('flickr.min.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('build/js'));
 
 });
 
@@ -52,10 +53,15 @@ gulp.task('scriptJs', function(){
 
 //minify site stylsheets
 gulp.task('stylesCSS', function(){
-	return gulp.src(['src/css/stylesheet.css'])
+	return gulp.src([
+
+				path.css + 'stylesheet.css',
+				path.bower + 'jquery-colorbox/example3/colorbox.css'
+
+		])
 	
-			.pipe(rename('stylesheet.min.css'))
-			.pipe(minifyCss())
-			.pipe(gulp.dest('build/css'));
+		.pipe(concat('stylesheet.min.css'))
+		.pipe(minifyCss())
+		.pipe(gulp.dest('build/css'));
 
 });
