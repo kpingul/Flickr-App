@@ -18,7 +18,6 @@
     
 
 
-
   var config = {
 
     apiKey: "7fc4618c200ab1549a30ce201d92e058",
@@ -72,8 +71,10 @@
     
 
       //cache array of photos
-      var photo = result.photos.photo;
-      console.log(photo)
+      var photo = result.photos.photo,
+          context = {},
+          html    = "";
+
      
       for(var i = 0; i < photo.length; i++) {
 
@@ -115,8 +116,8 @@
 
 
 
-      var context = {photos: photos};
-      var html    = template(context);
+       context = {photos: photos};
+       html    = template(context);
 
      $(gallery).html(html);
 
@@ -138,18 +139,21 @@
 
 
 
-    }).on('jg.complete', function () {
-    $(this).find('a').colorbox({
-        maxWidth : '95%',
-        maxHeight : '95%',
-        speed: 400,
-        opacity : .9,
-        fadeOut: 600,
-        transition : 'elastic',
-        current : ''
-      
+    })
+
+      .on('jg.complete', function () {
+
+        $(this).find('a').colorbox({
+          maxWidth : '95%',
+          maxHeight : '95%',
+          speed: 400,
+          opacity : .9,
+          fadeOut: 600,
+          transition : 'elastic',
+          current : ''
+        
+         });
     });
-});
 
 
 

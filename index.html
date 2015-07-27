@@ -28,16 +28,21 @@
 
 	</div><!-- end of container -->
 
-<script></script>
+
+
+
 <script id="template"  type="text/x-handlebars-template">
 	
 
 
 			
 	{{# photos}}
-		<a href="https://farm{{farmID}}.staticflickr.com/{{serverID}}/{{id}}_{{secretID}}.jpg"><img  alt="{{title}}" src="https://farm{{farmID}}.staticflickr.com/{{serverID}}/{{id}}_{{secretID}}.jpg"/></a>
+		<a href="https://farm{{farmID}}.staticflickr.com/{{serverID}}/{{id}}_{{secretID}}.jpg">
 
-		
+			<img  alt="{{title}}" src="https://farm{{farmID}}.staticflickr.com/{{serverID}}/{{id}}_{{secretID}}.jpg"/>
+
+		</a>
+
 	{{/photos}}
 
 
@@ -46,13 +51,9 @@
 
 
 <!-- Uglified Version of Dependencies AND scripts-->
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/Justified-Gallery/dist/js/jquery.justifiedGallery.min.js"></script>
-<script src="bower_components/handlebars/handlebars.min.js"></script>
-<script src="bower_components/flickrapi/browser/flickrapi.js"></script>
-<script src="bower_components/jquery-colorbox/jquery.colorbox.js"></script>
+<script src="build/js/dependenciesJS.min.js"></script>
+<script src="build/js/flickr.min.js"></script>
 
-<script src="src/js/flickr.js"></script>
 
 
 </body>	

@@ -1,29 +1,53 @@
-#Flickr Application
+#Flickr Widget
 
-#Update
-
-
-I added <a href="http://bower.io">Bower</a> and <a href="http://gulpjs.com">Gulp</a> to my workflow and found it very useful minifying the JS and CSS files for a lift in performance at load time.
 
 <a href="http://kpingul.github.io/Flickr-App">View here</a>
 
-#The Goal
-
-I created the Flickr App because I wanted to use <a href="https://www.flickr.com/services/api/">Flickr's API</a> and create a 
-slideshow of my uploaded photos.
-
-
-#The Approach
-
-In this project, I really wanted to get started working with real world API's. So, what did I do, I looked up at some useful API's and ran into <a href="http://flickr.com">Flickr</a>. Getting into this part of the web was totally foreign to me as to I didn't know how to approach it. Basically, I looked at the <a href="https://www.flickr.com/services/api/">Flickr API</a> page and did some browsing and found a node module called <a href="https://www.npmjs.com/package/flickr">Flickr-API</a> and got it setup(Customer ID/Token) for me to send a request to the Flickr servers. From that point on, once I got the data back as JSON, the fun was going to start. In fact, instead of using a templating library, I just created a basic algorithm to serve up the data I needed to append the Images to the page. Long story short, working with the Flickr API really challenged me to learn outside of my realm and taught me a lot.
-
 #The Build
 
-<a href="http://www.getbootstrap.com/">Bootstrap</a> for the UI
+#Task Setup
 
-<a href="https://blueimp.github.io/jQuery-Image-Gallery">Jquery + Image Gallery Plugin</a> for the slideshow and modal.
+Use NPM to install
 
-<a href="https://www.npmjs.com/package/flickrapi">Flickr wrapper with oAuth authentication</a> for serving up the API.
+	-<a href="https://www.npmjs.com/package/gulp">gulp</a>
+
+	-<a href="https://www.npmjs.com/package/gulp-concat">gulp-concat</a>
+
+	-<a href="https://www.npmjs.com/package/gulp-minify-css">gulp-minifiy-css</a>
+
+	-<a href="https://www.npmjs.com/package/gulp-rename">gulp-rename</a>
+
+	-<a href="https://www.npmjs.com/package/gulp-uglify">gulp-uglify</a>
+
+
+Setup Server 
+
+	-<a href="http://expressjs.com/">Express js</a> run on local host
+
+#Dependencies using Bower
+
+<a href="http://www.getbootstrap.com/">Bootstrap</a> for the repsonsive layout
+
+<a href="https://github.com/miromannino/Justified-Gallery">Justified Gallery</a> jQuery plugin created by <a href="http://miromannino.com/">Miro Mannino</a> 
+
+<a href="http://www.jacklmoore.com/colorbox/">Colorbox lightbox</a> jQuery plugin created by <a href="http://www.jacklmoore.com/">Jack Moore</a>
+
+<a href="https://github.com/Pomax/node-flickrapi">Flickr wrapper with oAuth authentication</a> for serving up the API.
+
+
+<a href="https://github.com/wycats/handlebars.js/">Handlebars Js</a>  for the templating
+
+
+#Run
+
+type in command prompt node server.js to start the server on local host
+
+
+
+
+
+
+
 
 
 
