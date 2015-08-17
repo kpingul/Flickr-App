@@ -1,23 +1,45 @@
-#Flickr Widget
+#What is Flickr Widget?
+
+Flickr Widget is a widget I created a couple months back. It was more of a an experiment that allowed me to learn how to work with social Api's. Basically, It displays photos from my account via image gallery.
 
 
 <a href="http://kpingul.github.io/Flickr-App">View here</a>
 
-#The Build
+#Application Folder Structure
 
-#Task Setup
+<img src="http://i84.photobucket.com/albums/k34/kdiggz415/flickrAppFolderStructure.png"/>
 
-Use NPM to install
+#Requirements
 
-<a href="https://www.npmjs.com/package/gulp">gulp</a>
+-<a href="https://www.npmjs.com">npm</a>
 
-<a href="https://www.npmjs.com/package/gulp-concat">gulp-concat</a>
+-<a href="http://bower.io">bower</a>
 
-<a href="https://www.npmjs.com/package/gulp-minify-css">gulp-minifiy-css</a>
+#Dependencies
 
-<a href="https://www.npmjs.com/package/gulp-rename">gulp-rename</a>
+<Package.json</b>
+<pre>
+"express": "^4.12.4",
+"gulp": "^3.9.0",
+"gulp-minify-css": "^1.2.0",
+"gulp-rename": "^1.2.2",
+"gulp-concat": "^2.6.0",
+"gulp-uglify": "^1.2.0"
+</pre>
 
-<a href="https://www.npmjs.com/package/gulp-uglify">gulp-uglify</a>
+<b>Bower.json</b>
+<pre>
+  "devDependencies": {
+    "jquery": "~2.1.4",
+    "flickrapi": "~0.3.32",
+    "bootstrap": "~3.3.5",
+    "Justified-Gallery": "~3.6.0",
+    "handlebars": "~3.0.3",
+    "jquery-colorbox": "~1.6.2",
+    "swipebox": "~1.4.1"
+  }
+</prev>
+
 
 
 #Setup Server 
