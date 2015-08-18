@@ -9,6 +9,8 @@ Flickr Widget is a widget I created a couple months back. It was more of a an ex
 
 <img src="http://i84.photobucket.com/albums/k34/kdiggz415/flickrAppFolderStructure.png"/>
 
+Since this was a very small widget, the folder structure is organized with a source and build folder for production.
+
 #Requirements
 
 -<a href="https://www.npmjs.com">npm</a>
@@ -17,7 +19,7 @@ Flickr Widget is a widget I created a couple months back. It was more of a an ex
 
 #Dependencies
 
-<Package.json</b>
+<b><Package.json</b>
 <pre>
 "express": "^4.12.4",
 "gulp": "^3.9.0",
@@ -40,31 +42,20 @@ Flickr Widget is a widget I created a couple months back. It was more of a an ex
   }
 </prev>
 
+#Installation
 
+Image Widget can be installed simply by:
 
-#Setup Server 
+<ul>
+  <li>Cloning this repo</li>
+  <li>change directory to Flickr-App</li>
+  <li><a href="https://www.npmjs.com">npm</a> - <code>npm install for dev dependencies</code></li>
+  <li><a href="http://bower.io">bower</a> - <code>bower install for front end dependencies</code></li>
+</ul>
 
-<a href="http://expressjs.com/">Express js</a> run on local host
+#Features
 
-#Dependencies using Bower
-
-<a href="http://www.getbootstrap.com/">Bootstrap</a> for the repsonsive layout
-
-<a href="https://github.com/miromannino/Justified-Gallery">Justified Gallery</a> jQuery plugin created by <a href="http://miromannino.com/">Miro Mannino</a> 
-
-<a href="http://www.jacklmoore.com/colorbox/">Colorbox lightbox</a> jQuery plugin created by <a href="http://www.jacklmoore.com/">Jack Moore</a>
-
-<a href="https://github.com/Pomax/node-flickrapi">Flickr wrapper with oAuth authentication</a> for serving up the API.
-
-
-<a href="https://github.com/wycats/handlebars.js/">Handlebars Js</a>  for the templating
-
-
-#Run
-
-type in command prompt node server.js to start the server on local host
-
-
+<b>The application and UI is built with <a href="http://www.jquery.com">jQuery</a> and <a href="http://handlebarsjs.com/">Handlebars.js</a>.
 
 
 
