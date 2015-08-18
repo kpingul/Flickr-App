@@ -19,7 +19,7 @@ Since this was a very small widget, the folder structure is organized with a sou
 
 #Dependencies
 
-<b><Package.json</b>
+<b>Package.json</b>
 <pre>
 "express": "^4.12.4",
 "gulp": "^3.9.0",
@@ -31,16 +31,16 @@ Since this was a very small widget, the folder structure is organized with a sou
 
 <b>Bower.json</b>
 <pre>
-  "devDependencies": {
-    "jquery": "~2.1.4",
-    "flickrapi": "~0.3.32",
-    "bootstrap": "~3.3.5",
-    "Justified-Gallery": "~3.6.0",
-    "handlebars": "~3.0.3",
-    "jquery-colorbox": "~1.6.2",
-    "swipebox": "~1.4.1"
-  }
-</prev>
+"devDependencies": {
+  "jquery": "~2.1.4",
+  "flickrapi": "~0.3.32",
+  "bootstrap": "~3.3.5",
+  "Justified-Gallery": "~3.6.0",
+  "handlebars": "~3.0.3",
+  "jquery-colorbox": "~1.6.2",
+  "swipebox": "~1.4.1"
+}
+</pre>
 
 #Installation
 
@@ -55,7 +55,7 @@ Image Widget can be installed simply by:
 
 #Features
 
-<b>The application and UI is built with <a href="http://www.jquery.com">jQuery</a> and <a href="http://handlebarsjs.com/">Handlebars.js</a>.
+<b>The application and UI is built with <a href="http://www.jquery.com">jQuery</a>(write less do more) and <a href="http://handlebarsjs.com/">Handlebars.js</a>(minimal templating on steroids)</b>
 
 
 
