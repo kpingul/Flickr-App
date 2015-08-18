@@ -7,9 +7,9 @@ Flickr Widget is a widget I created and started last year. It was more of a an e
 
 #Application Folder Structure
 
-<img src="http://i84.photobucket.com/albums/k34/kdiggz415/flickrAppFolderStructure.png"/>
+<img src="http://i84.photobucket.com/albums/k34/kdiggz415/flickrAppFolderStructure_2.png"/>
 
-Since this was a very small widget, the folder structure is organized with a source and build folder for production.
+Since this was a very small widget, the folder structure is organized by the app and separated into the model and view.
 
 #Requirements
 
@@ -32,7 +32,6 @@ Since this was a very small widget, the folder structure is organized with a sou
 <b>Bower.json</b>
 <pre>
 "jquery": "~2.1.4",
-"flickrapi": "~0.3.32",
 "bootstrap": "~3.3.5",
 "Justified-Gallery": "~3.6.0",
 "handlebars": "~3.0.3",
@@ -74,6 +73,21 @@ Once you've installed the dependencies, you can:
 
 <code>Run node server.js</code> and locate to your local host on port 8080 localhost:8080
 
+#Changelog
+
+Version 1.0 
+
+<ul>
+  <li>Structured application into one file called flickr.js</li>
+  <li>Used a node <a href="https://github.com/Pomax/node-flickrapi">flickr</a> api wrapper</li>
+</ul>
+
+Version 1.0.1
+
+<ul>
+  <li>Refactor application using a more modular approach with models and views</li>
+  <li>Removed the flickr api library and instead, used Flickr's API endpoints directly using ajax and promises.</li>
+</ul>
 
 
 
