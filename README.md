@@ -1,6 +1,6 @@
 #What is Flickr Widget?
 
-Flickr Widget is a widget I created and started couple last year. It was more of a an experiment that allowed me to learn how to work with social Api's. Basically, It displays photos from my account via image gallery.
+Flickr Widget is a widget I created and started last year. It was more of a an experiment that allowed me to learn how to work with social Api's. Basically, It displays photos from my account via image gallery.
 
 
 <a href="http://kpingul.github.io/Flickr-App">View here</a>
