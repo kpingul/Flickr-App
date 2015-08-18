@@ -74,7 +74,7 @@ Here are the dependencies that I'm to build out the cross browser UI.
 
 Once you've installed the dependencies, you can:
 
-Run node server.js and locate to your local host on port 8080 localhost:8080
+<code>Run node server.js</code> and locate to your local host on port 8080 localhost:8080
 
 
 
