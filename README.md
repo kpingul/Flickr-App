@@ -75,14 +75,14 @@ Once you've installed the dependencies, you can:
 
 #Changelog
 
-Version 1.0 
+<b>Version 1.0</b>
 
 <ul>
   <li>Structured application into one file called flickr.js</li>
   <li>Used a node <a href="https://github.com/Pomax/node-flickrapi">flickr</a> api wrapper</li>
 </ul>
 
-Version 1.0.1
+<b>Version 1.0.1</b>
 
 <ul>
   <li>Refactor application using a more modular approach with models and views</li>
