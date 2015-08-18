@@ -31,14 +31,12 @@ Since this was a very small widget, the folder structure is organized with a sou
 
 <b>Bower.json</b>
 <pre>
-"devDependencies": {
-  "jquery": "~2.1.4",
-  "flickrapi": "~0.3.32",
-  "bootstrap": "~3.3.5",
-  "Justified-Gallery": "~3.6.0",
-  "handlebars": "~3.0.3",
-  "jquery-colorbox": "~1.6.2"
-}
+"jquery": "~2.1.4",
+"flickrapi": "~0.3.32",
+"bootstrap": "~3.3.5",
+"Justified-Gallery": "~3.6.0",
+"handlebars": "~3.0.3",
+"jquery-colorbox": "~1.6.2"
 </pre>
 
 #Installation
