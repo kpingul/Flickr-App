@@ -2,8 +2,8 @@
 	'use strict';
 
 	function Flickr() {
-		this.flickrModel = new window.app.FlickrModel();
-		this.flickrView = new window.app.FlickrView();
+		this.flickrModel = new app.FlickrModel();
+		this.flickrView = new app.FlickrView();
 	}
 
 	var flickr = new Flickr();
