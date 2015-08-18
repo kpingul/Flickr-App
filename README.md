@@ -37,8 +37,7 @@ Since this was a very small widget, the folder structure is organized with a sou
   "bootstrap": "~3.3.5",
   "Justified-Gallery": "~3.6.0",
   "handlebars": "~3.0.3",
-  "jquery-colorbox": "~1.6.2",
-  "swipebox": "~1.4.1"
+  "jquery-colorbox": "~1.6.2"
 }
 </pre>
 
@@ -57,7 +56,25 @@ Image Widget can be installed simply by:
 
 <b>The application and UI is built with <a href="http://www.jquery.com">jQuery</a>(write less do more) and <a href="http://handlebarsjs.com/">Handlebars.js</a>(minimal templating on steroids)</b>
 
+Features include:
 
+<ul>
+  <li>Responsive image gallery</li>
+  <li>Lightbox to display the photos</li>
+</ul>
+
+Here are the dependencies that I'm to build out the cross browser UI.
+
+<ul>
+  <li><a href="http://miromannino.github.io/Justified-Gallery/getting-started/">Justified Gallery</a>(This is a JQuery plugin which allows you to create responsive, infinite, and high quality justified gallery of images) created by <a href="https://github.com/miromannino">Miro Mannino</a></li>
+  <li><a href="http://www.jacklmoore.com/colorbox/">Colorbox</a>(A lightweight customizable lightbox plugin for jQuery) created by <a href="https://github.com/jackmoore">Jack Moore</a> that allows the users to view the light box.</li>
+</ul>
+
+#Getting up and runnning
+
+Once you've installed the dependencies, you can:
+
+Run node server.js and locate to your local host on port 8080 localhost:8080
 
 
 
