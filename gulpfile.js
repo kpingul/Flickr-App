@@ -2,7 +2,12 @@ var gulp 		= require('gulp'),
 	concat 		= require('gulp-concat'),
 	rename 		= require('gulp-rename'),
 	uglify 		= require('gulp-uglify'),
-    minifyCss 	= require('gulp-minify-css');
+    minifyCss 	= require('gulp-minify-css'),
+	express 	= require('express'),
+	app 		= express(),
+	port 		= 8080;
+
+
 
 
 var path = {
@@ -32,15 +37,13 @@ gulp.task('dependenciesJS', function(){
 });
 
 
-
-
 //Uglify all Javascript files
 
 
 gulp.task('scriptJs', function(){
-	return gulp.src(['src/js/flickr.js'])
+	return gulp.src(['src/js/*.js'])
 
-		.pipe(concat('flickr.min.js'))
+		.pipe(concat('app.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('build/js'));
 
@@ -65,3 +68,36 @@ gulp.task('stylesCSS', function(){
 		.pipe(gulp.dest('build/css'));
 
 });
+
+
+//Javascript files
+gulp.task('watchScripts', function(){
+
+	return gulp.watch('src/js/*.js', ['scriptJs']);
+
+})
+
+
+//CSS files
+gulp.task('watchStyles', function(){
+	
+	return gulp.watch('src/css/*.css', ['stylesCSS']);
+
+});
+
+
+
+gulp.task('express', function(){
+
+	app.use(express.static(__dirname + '/'));
+
+
+	app.listen(port, function(){
+
+		console.log('Server running on port ' + port);
+	})
+
+});
+ 
+
+gulp.task('default', ['express', 'watchScripts', 'watchStyles'])

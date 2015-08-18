@@ -18,7 +18,7 @@
 	<div class="container">
 		<h1>Image Widget</h1>
 
-		<div id="basicExample">
+		<div id="PhotoContainer">
 
 				<!-- image template gets rendered here -->
 
@@ -32,28 +32,20 @@
 
 
 <script id="template"  type="text/x-handlebars-template">
-	
-
-
-			
 	{{# photos}}
 		<a href="https://farm{{farmID}}.staticflickr.com/{{serverID}}/{{id}}_{{secretID}}.jpg">
 
 			<img  alt="{{title}}" src="https://farm{{farmID}}.staticflickr.com/{{serverID}}/{{id}}_{{secretID}}.jpg"/>
 
 		</a>
-
 	{{/photos}}
-
-
-
 </script>
-
 
 <!-- Uglified Version of Dependencies AND scripts-->
 <script src="build/js/dependenciesJS.min.js"></script>
-<script src="build/js/flickr.min.js"></script>
-
+<script src="src/js/FlickrModel.js"></script>
+<script src="src/js/FlickrView.js"></script>
+<script src="src/js/app.js"></script>
 
 
 </body>	
