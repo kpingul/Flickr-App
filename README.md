@@ -87,6 +87,7 @@ Version 1.0.1
 <ul>
   <li>Refactor application using a more modular approach with models and views</li>
   <li>Removed the flickr api library and instead, used Flickr's API endpoints directly using ajax and promises.</li>
+  <li>Integrated the express server into my Gulp workflow instead of the server.js file and added watchers for the script and css files.</li>
 </ul>
 
 
