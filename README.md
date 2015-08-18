@@ -9,7 +9,7 @@ Flickr Widget is a widget I created and started last year. It was more of a an e
 
 <img src="http://i84.photobucket.com/albums/k34/kdiggz415/flickrAppFolderStructure_2.png"/>
 
-Since this was a very small widget, the folder structure is organized by the app and separated into the model and view.
+Since this was a very small widget, the folder structure is organized by the app folder and separated into the model and view creating a more modular approach. 
 
 #Requirements
 
