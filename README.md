@@ -5,11 +5,7 @@
 
 ##Purpose
 
-The idea is to build an application <b>to serve the users with a very simple shopping experience using AngularJS</b>. It was designed to allow users to customize their own personal shopping carts and even allowed to checkout their items and place an order. The application tries to show best practices when it comes to: <b>folders structure</b>, <b>using modules</b>, <b>organizing navigation</b>, and building <b>a simple interface</b>.
-
 The idea is an experiment I created for fun. Basically, it allows users to view photos from my Flickr Account. The small app tries to <b>demonstrate modularity and a separation of concerns between the data and the UI</b>.
-
-
 
 The sample demo can be found <a href="http://kirckpingul.com/Flickr-App"><b>here</b></a>
 
@@ -44,7 +40,7 @@ Either clone this repository or fork it on GitHub
 
 ### Dependencies
 
-Since the client application is built using AngularJS and other 3rd party libraries, we need to install the local dependencies using [Bower](http://bower.io/) and [npm](http://npmjs.org).
+Since the client application is built using jQuery, handlebars, and other 3rd party libraries, we need to install the local dependencies using [Bower](http://bower.io/) and [npm](http://npmjs.org).
 
 <b>Bower.json</b>
 <pre>
@@ -98,8 +94,6 @@ Since this was a very small widget, the folder structure is organized by the app
 
 
 ###Features
-
-<b>The application and UI is built with <a href="http://www.jquery.com">jQuery</a>(write less do more) and <a href="http://handlebarsjs.com/">Handlebars.js</a>(minimal templating on steroids)</b>
 
 Features include:
 
