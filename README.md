@@ -56,6 +56,7 @@ Image Widget can be installed simply by:
 Features include:
 
 <ul>
+<li><a href="https://www.flickr.com/services/api/">Flickr API</a> that allows users to view photos from my <a href="https://www.flickr.com/">Flickr</a> Account</li>
   <li>Responsive image gallery</li>
   <li>Lightbox to display the photos</li>
 </ul>
