@@ -1,23 +1,64 @@
-#What is Flickr Widget?
-
-Flickr Widget is a widget I created and started last year. It was more of a an experiment that allowed me to learn how to work with social Api's. Basically, It displays photos from my account via image gallery.
+#<a href="http://www.jquery.com">jQuery</a> and <a href="http://handlebarsjs.com/">Handlebars.js</a> Widget</b>
 
 
-<a href="http://kpingul.github.io/Flickr-App">View here</a>
+***
 
-#Application Folder Structure
+##Purpose
 
-<img src="http://i84.photobucket.com/albums/k34/kdiggz415/flickrAppFolderStructure_2.png"/>
+The idea is to build an application <b>to serve the users with a very simple shopping experience using AngularJS</b>. It was designed to allow users to customize their own personal shopping carts and even allowed to checkout their items and place an order. The application tries to show best practices when it comes to: <b>folders structure</b>, <b>using modules</b>, <b>organizing navigation</b>, and building <b>a simple interface</b>.
 
-Since this was a very small widget, the folder structure is organized by the app folder and separated into the model and view creating a more modular approach. 
+The idea is an experiment I created for fun. Basically, it allows users to view photos from my Flickr Account. The small app tries to <b>demonstrate modularity and a separation of concerns between the data and the UI</b>.
 
-#Requirements
 
--<a href="https://www.npmjs.com">npm</a>
 
--<a href="http://bower.io">bower</a>
+The sample demo can be found <a href="http://kirckpingul.com/Flickr-App"><b>here</b></a>
 
-#Dependencies
+##Stack
+
+* Client: <a href="http://www.jquery.com">jQuery</a>(small library for DOM Manipulation) and  <a href="http://handlebarsjs.com/">Handlebars.js</a>(JavaScript templating library)
+* CSS: <a href="http://foundation.zurb.com/">Bootstrap</a> (Responsive CSS framework designed for cross browser capabilities)
+* Backend : <a href="https://www.flickr.com/services/api/">Flickr API</a>
+
+###Build
+
+* powered by [Gulp.js](http://www.gulpjs.com/)
+* build supporting JavaScript and CSS  minification.
+
+##Installation
+
+###Platform & Tools
+
+You need to install [Node.js](http://nodejs.org/) and then the development tools. Node.js comes with a package manager called [npm](http://npmjs.org) for installing NodeJS applications and libraries.
+* [Install node.js](http://nodejs.org/download/) (requires node.js => v0.12.7)
+* [Install bower](http://bower.io/), a depedency package manager.
+
+###Grabbing the code
+
+Either clone this repository or fork it on GitHub
+
+<pre>
+* https://github.com/kpingul/Flickr-App.git
+
+* cd flickr-app
+</pre>
+
+### Dependencies
+
+Since the client application is built using AngularJS and other 3rd party libraries, we need to install the local dependencies using [Bower](http://bower.io/) and [npm](http://npmjs.org).
+
+<b>Bower.json</b>
+<pre>
+"jquery": "~2.1.4",
+"bootstrap": "~3.3.5",
+"Justified-Gallery": "~3.6.0",
+"handlebars": "~3.0.3",
+"jquery-colorbox": "~1.6.2"
+</pre>
+
+* To Install the front end dependencies run:
+<pre> <a href="http://bower.io">bower</a> install</pre>
+
+(This will install the dependencies declared in the /bower.json file)
 
 <b>Package.json</b>
 <pre>
@@ -29,27 +70,34 @@ Since this was a very small widget, the folder structure is organized by the app
 "gulp-uglify": "^1.2.0"
 </pre>
 
-<b>Bower.json</b>
-<pre>
-"jquery": "~2.1.4",
-"bootstrap": "~3.3.5",
-"Justified-Gallery": "~3.6.0",
-"handlebars": "~3.0.3",
-"jquery-colorbox": "~1.6.2"
-</pre>
+* To install our npm dependencies for our build system and server, run: 
+<pre><a href="https://www.npmjs.com">npm</a> install </pre>
 
-#Installation
+(This will install the dependencies declared in the /package.json file)
 
-Image Widget can be installed simply by:
+##Running the server
 
-<ul>
-  <li>Cloning this repo</li>
-  <li>change directory to Flickr-App</li>
-  <li><a href="https://www.npmjs.com">npm</a> - <code>npm install for dev dependencies</code></li>
-  <li><a href="http://bower.io">bower</a> - <code>bower install for front end dependencies</code></li>
-</ul>
+* Once you've installed the dependencies, you can start the server by running the [Node.js](http://nodejs.org/) command:
 
-#Features
+<pre>node server.js</pre>
+
+* Once it brings up the server, you can start browsing through the application at http://localhost:8080
+ 
+ 
+##Browser Support
+ 
+jQuery, Handlebars, and Bootstrap will work with the latest versions of Chrome, Firefox, Safari, and Opera, as well as Internet Explorer version 9, 10, and 11.
+
+##Development
+
+###Folders Structure
+
+<img src="http://i84.photobucket.com/albums/k34/kdiggz415/flickrAppFolderStructure_2.png"/>
+
+Since this was a very small widget, the folder structure is organized by the app folder and separated into the model and view creating a more modular approach. 
+
+
+###Features
 
 <b>The application and UI is built with <a href="http://www.jquery.com">jQuery</a>(write less do more) and <a href="http://handlebarsjs.com/">Handlebars.js</a>(minimal templating on steroids)</b>
 
@@ -68,13 +116,7 @@ Here are the dependencies that I'm to build out the cross browser UI.
   <li><a href="http://www.jacklmoore.com/colorbox/">Colorbox</a>(A lightweight customizable lightbox plugin for jQuery) created by <a href="https://github.com/jackmoore">Jack Moore</a> that allows the users to view the light box.</li>
 </ul>
 
-#Getting up and runnning
-
-Once you've installed the dependencies, you can:
-
-<code>Run node server.js</code> and locate to your local host on port 8080 localhost:8080
-
-#Changelog
+###Changelog
 
 <b>Version 1.0</b>
 
@@ -90,7 +132,6 @@ Once you've installed the dependencies, you can:
   <li>Removed the flickr api library and instead, used Flickr's API endpoints directly using ajax and promises.</li>
   <li>Integrated the express server into my Gulp workflow instead of the server.js file and added watchers for the script and css files.</li>
 </ul>
-
 
 
 
