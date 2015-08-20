@@ -128,7 +128,9 @@ Here are the dependencies that I'm to build out the cross browser UI.
 </ul>
 
 
+##License
 
+MIT
 
 
 
