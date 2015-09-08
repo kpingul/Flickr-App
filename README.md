@@ -3,11 +3,13 @@
 
 ***
 
+####The sample demo can be found <a href="http://kirckpingul.com/Flickr-App"><b>here</b></a>
+
+
+
 ##Purpose
 
 The idea is an experiment I created for fun. Basically, it allows users to view photos from my Flickr Account. The small app tries to <b>demonstrate modularity and a separation of concerns between the data and the UI</b>.
-
-The sample demo can be found <a href="http://kirckpingul.com/Flickr-App"><b>here</b></a>
 
 ##Stack
 
