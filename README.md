@@ -1,36 +1,27 @@
-#<a href="http://www.jquery.com">jQuery</a> and <a href="http://handlebarsjs.com/">Handlebars.js</a> Widget</b>
-
-
-***
-
-####The sample demo can be found <a href="http://kirckpingul.com/Flickr-App"><b>here</b></a>
-
-
-
-##Purpose
+## Purpose
 
 The idea is an experiment I created for fun. Basically, it allows users to view photos from my Flickr Account. The small app tries to <b>demonstrate modularity and a separation of concerns between the data and the UI</b>.
 
-##Stack
+## Stack
 
 * Client: <a href="http://www.jquery.com">jQuery</a>(small library for DOM Manipulation) and  <a href="http://handlebarsjs.com/">Handlebars.js</a>(JavaScript templating library)
 * CSS: <a href="http://foundation.zurb.com/">Bootstrap</a> (Responsive CSS framework designed for cross browser capabilities)
 * Backend : <a href="https://www.flickr.com/services/api/">Flickr API</a>
 
-###Build
+### Build
 
 * powered by [Gulp.js](http://www.gulpjs.com/)
 * build supporting JavaScript and CSS  minification.
 
-##Installation
+## Installation
 
-###Platform & Tools
+### Platform & Tools
 
 You need to install [Node.js](http://nodejs.org/) and then the development tools. Node.js comes with a package manager called [npm](http://npmjs.org) for installing NodeJS applications and libraries.
 * [Install node.js](http://nodejs.org/download/) (requires node.js => v0.12.7)
 * [Install bower](http://bower.io/), a depedency package manager.
 
-###Grabbing the code
+### Grabbing the code
 
 Either clone this repository or fork it on GitHub
 
@@ -73,7 +64,7 @@ Since the client application is built using jQuery, handlebars, and other 3rd pa
 
 (This will install the dependencies declared in the /package.json file)
 
-##Running the server
+## Running the server
 
 * Once you've installed the dependencies, you can start the server by running the [Node.js](http://nodejs.org/) command:
 
@@ -82,20 +73,20 @@ Since the client application is built using jQuery, handlebars, and other 3rd pa
 * Once it brings up the server, you can start browsing through the application at http://localhost:8080
  
  
-##Browser Support
+## Browser Support
  
 jQuery, Handlebars, and Bootstrap will work with the latest versions of Chrome, Firefox, Safari, and Opera, as well as Internet Explorer version 9, 10, and 11.
 
 ##Development
 
-###Folders Structure
+### Folders Structure
 
 <img src="http://i84.photobucket.com/albums/k34/kdiggz415/flickrAppFolderStructure_2.png"/>
 
 Since this was a very small widget, the folder structure is organized by the app folder and separated into the model and view creating a more modular approach. 
 
 
-###Features
+### Features
 
 Features include:
 
@@ -112,7 +103,7 @@ Here are the dependencies that I'm to build out the cross browser UI.
   <li><a href="http://www.jacklmoore.com/colorbox/">Colorbox</a>(A lightweight customizable lightbox plugin for jQuery) created by <a href="https://github.com/jackmoore">Jack Moore</a> that allows the users to view the light box.</li>
 </ul>
 
-###Changelog
+### Changelog
 
 <b>Version 1.0</b>
 
